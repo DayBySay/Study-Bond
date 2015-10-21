@@ -12,6 +12,7 @@
 		3AAF75FE1BD7B63200AF338E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAF75FC1BD7B63200AF338E /* Main.storyboard */; };
 		3AAF76001BD7B63200AF338E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAF75FF1BD7B63200AF338E /* Assets.xcassets */; };
 		3AAF76031BD7B63200AF338E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAF76011BD7B63200AF338E /* LaunchScreen.storyboard */; };
+		3AAF760D1BD7C4F000AF338E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF760C1BD7C4F000AF338E /* Article.swift */; };
 		D3D00256EB1DBF9EC8E64AE7 /* Pods_BondTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088C9D11004901021DE00508 /* Pods_BondTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		3AAF75FF1BD7B63200AF338E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AAF76021BD7B63200AF338E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AAF76041BD7B63200AF338E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AAF760C1BD7C4F000AF338E /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		5C0D8A02B0E9EEEA5CC4E551 /* Pods-BondTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BondTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BondTest/Pods-BondTest.release.xcconfig"; sourceTree = "<group>"; };
 		A86140FE83885F343F901E75 /* Pods-BondTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BondTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BondTest/Pods-BondTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			children = (
 				3AAF75F81BD7B63200AF338E /* AppDelegate.swift */,
 				3AAF75FA1BD7B63200AF338E /* ViewController.swift */,
+				3AAF760C1BD7C4F000AF338E /* Article.swift */,
 				3AAF75FC1BD7B63200AF338E /* Main.storyboard */,
 				3AAF75FF1BD7B63200AF338E /* Assets.xcassets */,
 				3AAF76011BD7B63200AF338E /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 			files = (
 				3AAF75FB1BD7B63200AF338E /* ViewController.swift in Sources */,
 				3AAF75F91BD7B63200AF338E /* AppDelegate.swift in Sources */,
+				3AAF760D1BD7C4F000AF338E /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

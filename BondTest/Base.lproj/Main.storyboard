@@ -52,6 +52,17 @@
                                 <rect key="frame" x="164" y="327" width="47" height="30"/>
                                 <state key="normal" title="submit"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFK-lB-h0d">
+                                <rect key="frame" x="83" y="410" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-xw-fnJ">
+                                <rect key="frame" x="83" y="439" width="209" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -63,6 +74,8 @@
                         <outlet property="combineField2" destination="BAW-rq-HaZ" id="nPl-2m-Cob"/>
                         <outlet property="label" destination="aZD-3l-c31" id="uz3-wp-4AP"/>
                         <outlet property="textField" destination="bUG-8K-VOD" id="SZF-cr-SWI"/>
+                        <outlet property="titleField" destination="gAy-xw-fnJ" id="rsk-cr-OdM"/>
+                        <outlet property="titleLabel" destination="EFK-lB-h0d" id="vfK-d6-Y98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

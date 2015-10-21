@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var combineField1: UITextField!
     @IBOutlet weak var combineField2: UITextField!
     @IBOutlet weak var combineButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleField: UITextField!
+    
+    var article = Article(title: Observable<String?>("美味しいご飯"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,10 @@ class ViewController: UIViewController {
             .map { com1, com2 in
             return com1!.characters.count > 4 && com2!.characters.count > 4
         }.bindTo(combineButton.bnd_enabled)
+        
+        // MVVMっぽい感じ
+        titleField.bnd_text.bindTo(article.title)
+        article.title.bindTo(titleLabel.bnd_text)
     }
 
     override func didReceiveMemoryWarning() {
