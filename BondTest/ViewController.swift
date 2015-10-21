@@ -15,7 +15,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // テキストのバインディング
+        // オブザーブして処理
+        textField.bnd_text.observe { (text) in
+            print(text)
+        }
+        
         textField.bnd_text.bindTo(label.bnd_text)
     }
 
