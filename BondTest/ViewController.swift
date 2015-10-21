@@ -20,6 +20,7 @@ class ViewController: UIViewController {
             print(text)
         }
         
+        // テキストフィールドの値をラベルにバインディング
         textField.bnd_text.bindTo(label.bnd_text)
     }
 
