@@ -29,12 +29,17 @@ class ViewController: UIViewController {
         }
         
         // テキストフィールドの値をラベルにバインディング
-        textField.bnd_text.bindTo(label.bnd_text)
+//        textField.bnd_text.bindTo(label.bnd_text)
+        textField.bnd_text ->> label.bnd_text
         
         // 値に文字列を追加する
+//        textField.bnd_text
+//            .map { "Hi " + $0! }
+//            .bindTo(label.bnd_text)
+        
         textField.bnd_text
-            .map { "Hi " + $0! }
-            .bindTo(label.bnd_text)
+            .map{ "Hi " + $0! }
+            ->> label.bnd_text
         
         button.bnd_tap.observe { (event) in
             print("button tapped.")
