@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A61CD101BD9E76C00FF17CE /* BondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61CD0F1BD9E76C00FF17CE /* BondTableViewController.swift */; };
 		3AAF75F91BD7B63200AF338E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF75F81BD7B63200AF338E /* AppDelegate.swift */; };
 		3AAF75FB1BD7B63200AF338E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF75FA1BD7B63200AF338E /* ViewController.swift */; };
 		3AAF75FE1BD7B63200AF338E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAF75FC1BD7B63200AF338E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		088C9D11004901021DE00508 /* Pods_BondTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BondTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A61CD0F1BD9E76C00FF17CE /* BondTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BondTableViewController.swift; sourceTree = "<group>"; };
 		3AAF75F51BD7B63200AF338E /* BondTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BondTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAF75F81BD7B63200AF338E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAF75FA1BD7B63200AF338E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				3AAF75F81BD7B63200AF338E /* AppDelegate.swift */,
 				3AAF75FA1BD7B63200AF338E /* ViewController.swift */,
+				3A61CD0F1BD9E76C00FF17CE /* BondTableViewController.swift */,
 				3AAF760C1BD7C4F000AF338E /* Article.swift */,
 				3AAF75FC1BD7B63200AF338E /* Main.storyboard */,
 				3AAF75FF1BD7B63200AF338E /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 			files = (
 				3AAF75FB1BD7B63200AF338E /* ViewController.swift in Sources */,
 				3AAF75F91BD7B63200AF338E /* AppDelegate.swift in Sources */,
+				3A61CD101BD9E76C00FF17CE /* BondTableViewController.swift in Sources */,
 				3AAF760D1BD7C4F000AF338E /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
