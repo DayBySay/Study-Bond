@@ -45,6 +45,13 @@ class ViewController: UIViewController {
             print("button tapped.")
         }
         
+        
+        // 双方向バインディング
+//        textField.bnd_text ->> titleField.bnd_text
+//        titleField.bnd_text ->> textField.bnd_text
+        
+        textField.bnd_text ->>< titleField.bnd_text
+        
         // ストリームっぽいやつ
         combineLatest(combineField1.bnd_text, combineField2.bnd_text)
             .map { com1, com2 in
