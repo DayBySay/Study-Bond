@@ -10,27 +10,26 @@ import UIKit
 import Bond
 
 class BondTableViewController: UITableViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let dataSource = ObservableArray(
+    var dataSource = ObservableArray(
             [
                 ObservableArray(
                     [
-                        "テキスト1",
-                        "テキスト2",
-                        "テキスト3",
-                        "テキスト4",
+                        Observable(Optional("テキスト1")),
                     ]
                 )
             ]
         )
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         dataSource.bindTo(self.tableView) { indexPath, dataSource, tableView in
-            let cell = tableView.dequeueReusableCellWithIdentifier("reuseCell", forIndexPath: indexPath)
+            let cell: ReuseCell = tableView.dequeueReusableCellWithIdentifier("reuseCell", forIndexPath: indexPath) as! ReuseCell
             let name = dataSource[indexPath.section][indexPath.row]
-            cell.textLabel!.text = name
+            cell.textLabel!.text = name.value
             
+            // わかりづらいけどViewModelと双方向バインディングしている
+            cell.textLabel!.bnd_text ->>< name
+            cell.textField.bnd_text ->>< name
             return cell
         }
         
@@ -40,4 +39,17 @@ class BondTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func add() {
+        let name = "テキスト" + String(dataSource[0].count + 1)
+        dataSource[0].append(Observable(name))
+    }
+    
+    @IBAction func remove() {
+        dataSource[0].removeLast()
+    }
+}
+
+class ReuseCell: UITableViewCell {
+    @IBOutlet weak var textField: UITextField!
 }
